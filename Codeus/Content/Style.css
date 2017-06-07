@@ -1,0 +1,170 @@
+﻿html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    background: #2f2f2f;
+    color: #FDFFFC;
+    margin: 0;
+}
+.BodyContainer {
+    height: auto;
+    margin-left: 40px;
+    width: auto;
+    /* position: fixed; */
+}
+
+.CodeMirror {
+    height: auto;
+    width: auto;
+}
+
+.CodeMirror-gutter {
+    width: 28px;
+}
+.Header {
+    min-height: 64.5px;
+    font-size: 40px;
+    border-bottom: 1px solid #fdfffc;
+}
+
+hr {
+    background: #fdfffc;
+    height: 1px;
+    border: none;
+}
+
+.Center {
+    width: 80%;
+    margin: auto;
+
+}
+
+.Document {
+    height: auto;
+    width: auto;
+}
+
+.DocumentContainer {
+    min-height: 100%;
+}
+
+.AddButton {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 30px;
+    max-height: 30px;
+    font-size: 30px;
+    border-radius: 5px;
+}
+
+.AddButton:hover {
+    color: #FDFFFC;
+    background-color: #235789;
+}
+
+.MenuHead {
+    padding: 5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: flex;
+}
+
+.MenuHead .Item {
+    cursor: default;
+    color: #FDFFFC;
+    width: 100%;
+    font-size: 30px;
+}
+
+.TabContainer {
+    top: 0;
+    z-index: 6;
+    position: fixed;
+    overflow-x: hidden;
+    width: 200px;
+    height: 100%;
+    left: -160px;
+    background-color: #2f2f2f;
+    transition: all 0.2s linear;
+    border: 1px solid #FDFFFC;
+}
+
+.TabContainer:hover, .Hover {
+    transform: translateX(160px);
+}
+
+input, button {
+    border: none;
+}
+
+
+.MenuBody .Tab {
+    display: flex;
+    justify-content: space-between;
+    cursor: default;
+    text-align: center;
+    color: #FDFFFC;
+    background: #2f2f2f;
+    padding: 5px;
+}
+
+.PendingChange {
+    color: #fdfffc;
+    background: #D1603D !important;
+}
+
+.MenuBody .Tab:hover {
+    color: #FDFFFC;
+    background-color: #235789;
+}
+
+.MenuBody .TabRemove {
+    right: 0;
+    position: relative;
+    display: none;
+}
+
+.Tab:hover .TabRemove {
+    min-width: 20px;
+    background-color: #C1292E;
+    border-radius: 5px;
+    display: block;
+}
+
+.TabContainer .ActiveTab {
+    color: black;
+    background-color: #0090C1;
+}
+
+.MenuFoot .AddTextBox {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    background-color: transparent;
+    border-radius: 5px;
+    color: #fdfffc;
+}
+
+.Message {
+    height: 100%;
+    margin-top: 150px;
+    margin-bottom: auto;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.Hidden {
+    display: none;
+}

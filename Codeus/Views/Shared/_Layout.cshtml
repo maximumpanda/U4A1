@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title {Codeus}</title>
+    
+</head>
+<body>
+    
+<link rel="stylesheet" href="~/Content/Style.css">
+<link rel="stylesheet" href="~/Scripts/CodeMirror/lib/codemirror.css">
+<link rel="stylesheet" href="~/Scripts/CodeMirror/theme/lesser-dark.css">
+<link rel="stylesheet" href="~/Scripts/CodeMirror/addon/fold/foldgutter.css"/>
+
+
+@Html.Partial("Components/DocumentSelector")
+<div class="BodyContainer">
+    @Html.Partial("Header")
+    @RenderBody()
+    @Html.Partial("Footer")
+</div>
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+<script src="~/Scripts/jquery.signalR-2.2.2.js"></script>
+<script src="/signalr/hubs"></script>
+
+<script src="~/Scripts/CodeusEditor.js" language="javascript"></script>
+<script src="~/Scripts/CodeMirror/lib/codemirror.js" language="javascript"></script>
+<script src="~/Scripts/CodeMirror/addon/fold/foldcode.js"></script>
+<script src="~/Scripts/CodeMirror/addon/fold/foldgutter.js"></script>
+<script src="~/Scripts/CodeMirror/addon/fold/brace-fold.js"></script>
+<script src="~/Scripts/CodeMirror/addon/fold/xml-fold.js"></script>
+<script src="~/Scripts/CodeMirror/addon/fold/comment-fold.js"></script>
+<script src="~/Scripts/CodeMirror/mode/clike/clike.js" language="javascript"></script>
+@RenderSection("scripts", required: false)
+</body>
+</html>
